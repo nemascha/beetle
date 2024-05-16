@@ -1,0 +1,315 @@
+.main {
+	background-color: lightsalmon;
+}
+
+.background {
+	position: absolute;
+    top: 62%;
+    left: 5%;
+	background-color: grey;
+	width: 90%;
+	height: 64px;
+    border-radius: 60% 60% 40% 40%;
+}
+
+.car {
+	position: absolute;
+    top: 43%;
+    left: 10%;
+    height: 175px;
+    width: 339px;
+    background: linear-gradient(70deg, #F4D32F, yellow);
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 365% 54% 0 5%;
+    box-shadow: inset 0.5em 0.5em #F4D32F;
+    transition: left 5s cubic-bezier(0, 0, 1, 1);
+}
+
+.car:after {
+	content: '';
+	position: absolute;
+	left: 94%;
+	top: 12%;
+	width: 2px;
+	height: 54px;
+	border: 13px solid transparent;
+	border-right-color: yellow;
+	transform: rotate(-10deg);
+}
+
+.hood {
+	position: absolute;
+	top: 42%;
+  left: 100%;
+  height: 102px;
+  width: 160px;
+  background: linear-gradient(70deg, yellow, #F4D32F);
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  border-radius: 0 100% 5% 0;
+  box-shadow: inset 0 0.5em #F4D32F;
+}
+
+.wheel-front {
+  position: absolute;
+  top: 75%;
+  left: 113%;
+	height: 88px;
+  width: 88px;
+  background-color: black;
+  border-radius: 50%;
+  box-shadow: inset 0px 5px 10px 0px #5b678a;
+  animation: 3s linear infinite rotate;
+  z-index: 2;
+}
+
+.wheel-front:after {
+	display: block;
+	content: '';
+	width: 45px;
+	height: 45px;
+	background: red;
+	border-radius: 100%;
+	margin: 21px auto;
+}
+
+.wheel-back {
+	position: absolute;
+	top: 75%;
+  left: 10%;
+	height: 88px;
+  width: 88px;
+  background-color: black;
+  border-radius: 50%;
+  box-shadow: inset 0px 5px 10px 0px #5b678a;
+  animation: 3s linear infinite rotate;
+  z-index: 2;
+}
+
+.wheel-back:after {
+	display: block;
+	content: '';
+	width: 45px;
+	height: 45px;
+	background: red;
+	border-radius: 100%;
+	margin: 21px auto;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fender-front {
+	position: absolute;
+    top: 63%;
+    left: 108%;
+    height: 69px;
+    width: 121px;
+    background-color: yellow;
+    border-radius: 120% 65% 5px 5px;
+    border: 1px solid black;
+    box-shadow: inset 0 0.5em #F4DE70;
+}
+
+.fender-back {
+	position: absolute;
+    top: 63%;
+    left: 2%;
+    height: 69px;
+    width: 121px;
+    background-color: yellow;
+    border-radius: 100% 50% 5px 5px;
+    border: 1px solid black;
+    box-shadow: inset 0 0.5em #F4DE70;
+}
+
+.window-front {
+	position: absolute;
+	top: 12%;
+	left: 73%;
+	height: 51px;
+	width: 87px;
+	background: linear-gradient(45deg, #C6C5C1, #E9E8E2);
+	border-radius: 5px 31px 5px 5px;
+	border-top: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+}
+
+.window-back {
+	position: absolute;
+	top: 12%;
+  left: 41%;
+	height: 52px;
+	width: 87px;
+	background: linear-gradient(45deg, #C6C5C1, #E9E8E2);
+  border-radius: 100% 5px 5px 5px;
+  border: 1px solid darkgray;
+}
+
+.door {
+	position: absolute;
+    top: 7%;
+    left: 69%;
+    background-color: #F4D32F;
+    height: 164px;
+    width: 3px;
+}
+
+.door:after {
+	position: absolute;
+	content: '';
+    top: 38%;
+    left: 51%;
+    border: 3px solid #F4D32F;
+    height: 0;
+    width: 108px;
+    z-index: 5;
+}
+
+.door:before {
+	position: absolute;
+    content: '';
+    top: 40%;
+    left: 40%;
+    height: 100px;
+    width: 2px;
+    z-index: 5;
+    background-color: #F4D32F;
+    margin: 0 111px;
+}
+
+.handle {
+	position: absolute;
+	top: 52%;
+	left: 73%;
+	background-color: #F4D32F;
+	height: 3px;
+	width: 23px;
+	border-radius: 50%;
+	border-top: 2px solid black;
+}
+
+.headlight {
+	position: absolute;
+    top: 65%;
+    left: 131%;
+    width: 50px;
+    height: 34px;
+    background-color: white;
+    border-radius: 0 61% 5px;
+}
+
+.bumper-front {
+	position: absolute;
+    background-color: lightgray;
+    width: 27px;
+    height: 17px;
+    top: 86%;
+    left: 142%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.bumper-back {
+	position: absolute;
+    background-color: lightgray;
+    width: 27px;
+    height: 17px;
+    top: 86%;
+    left: -5%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.threshold {
+	position: absolute;
+    top: 98%;
+    left: 38%;
+    height: 10px;
+    width: 235px;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 4px;
+    z-index: 5;
+    box-shadow: 5px 20px 32px 5px black;
+}
+
+.checkbox-wrapper-54 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  	justify-content: space-around;
+  	margin: 5%;
+}
+
+  .checkbox-wrapper-54 input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+  }
+
+  .checkbox-wrapper-54 *,
+  .checkbox-wrapper-54 ::after,
+  .checkbox-wrapper-54 ::before {
+    box-sizing: border-box;
+  }
+
+  /* The switch - the box around the slider */
+  .checkbox-wrapper-54 .switch {
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+    display: inline-block;
+  }
+
+  /* The slider */
+  .checkbox-wrapper-54 .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+  }
+
+  .checkbox-wrapper-54 .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+    ;
+   transition: .4s;
+  }
+
+  .checkbox-wrapper-54 input:checked + .slider {
+    background-color: #303136;
+  }
+
+  .checkbox-wrapper-54 input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
